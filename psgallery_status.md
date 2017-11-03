@@ -1,9 +1,4 @@
----
-ms.date:  2017-11-03 
-contributor:  JKeithB
-keywords:  gallery,powershell,cmdlet,psgallery
-title:  psgallery_status
----
+
 
 PowerShell Gallery Status
 =========================
