@@ -1,7 +1,7 @@
 ﻿
 <#PSScriptInfo
 
-.VERSION 0.1.0
+.VERSION 0.1.02
 
 .GUID 788b94eb-f6f0-400d-b259-2e15c3f102ee
 
@@ -15,12 +15,14 @@
 
 .LICENSEURI 
 
-.PROJECTURI 
+.PROJECTURI https://github.com/PowerShell/PowerShellGallery/
 
 .ICONURI 
 
 .RELEASENOTES
-  Version 0.1.0 - Initial Version. See description for use information. 
+ Version 0.1.02 - Fixing issues noted in GH (see projectURI above).
+ Version 0.1.01 - Version change when signed 
+ Version 0.1.0 - Initial Version. See description for use information. 
 
 
 .PRIVATEDATA 
@@ -43,6 +45,12 @@ Use instructions:
 * Provide the LocalFolder to place all the PowerShell Gallery items into. 
 
 For questions on this script, email cgadmin@microsoft.com 
+
+.Example 
+GetPSGalleryItemsForAuthor -AuthorName 'J. Keith Bankston' -LocalFolder c:\temp\test
+
+This will find all items where 'J. Keith Bankston' is listed as an author, and save them into c:\temp\test. 
+The folder will be created if it does not exist.
 
 #> 
 
@@ -94,7 +102,7 @@ find-script -repository psgallery |Where-Object {
            Write-Verbose "Retrieving all versions of $($_.Name)"
 
            Find-Script -Name $_.Name -repository psgallery -AllowPrerelease -AllVersions |  Foreach-Object { 
-                Save-Scrip -Name $_.Name -RequiredVersion $_.Version -Path $LocalFolder -Repository psgallery -AllowPrerelease
+                Save-Script -Name $_.Name -RequiredVersion $_.Version -Path $LocalFolder -Repository psgallery -AllowPrerelease
             }
         }
 
