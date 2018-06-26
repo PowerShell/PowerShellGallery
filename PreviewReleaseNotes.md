@@ -61,7 +61,9 @@ If you encounter something that is not listed here, please create an entry in ou
 
 The list is organized generally by the page where the issue will most likely be encountered.
 
-* Most the PowerShellGallery content is missing: 
+* PowerShellGet not yet updated to match PowerShell Gallery:
+An updated version (likely 1.6.6) of PowerShellGet is coming shortly. Until it is available, users must follow the instructions below to manually update NuGet.exe if they wish to publish to the PowerShell Gallery. 
+* Most the PowerShellGallery content is missing from Preview.Poshtestgallery: 
 The preview.poshtestgallery.com site is an internal testing location. There is very little content in both this site and the production PowerShell Gallery. The Azure modules published by the Azure SDK team are available here. 
 * I get failures trying to install the Azure modules from this site:
 When you try to re-install a module from a new location, you will need to specify "-Force". 
