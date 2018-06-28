@@ -4,10 +4,10 @@ contributor:  JKeithB
 keywords:  gallery,powershell,cmdlet,psgallery
 title:  Preview PowerShell Gallery Release Notes
 ---
-# Internal Preview PowerShell Gallery Release Notes
+# Preview PowerShell Gallery Release Notes
 
 ## What has changed?
-The PowerShell Gallery site is being updated to a new look, with some new features. Today, the changes are internally available via [https://Preview.PoshtestGallery.Com](https://Preview.PoshtestGallery.Com). 
+The PowerShell Gallery site is being updated to a new look, with some new features. Today, the changes are available via [https://Preview.PowerShellGallery.Com](https://Preview.PowerShellGallery.Com). 
 
 **Please try out our new site and give us feedback!**
 
@@ -21,38 +21,33 @@ Most of the new features come from the latest NuGet server code, as we are align
 * Direct download of items (as .Nupkg files)
 * UI updated to be more responsive 
 
-The preview.poshtestgallery.com site is an internal testing location, so the initial internal preview will not affect users who of PowerShellGallery.com. 
 
-We will be releasing a public preview soon, which shares the same storage as PowerShellGallery.com. All items in the public preview will also be available in the production PowerShellGallery site. 
+All items in this preview will also be available in the production PowerShellGallery site. The [Preview PowerShell Gallery](https://preview.powershellgallery.com) interacts with all the same items, and tracks all the same statistics, as [PowerShellGallery.com](https://powershellgallery.com)  
 
-Once we have enough testing of these changes, the original UI will be retired and everyone will get the new experience. That change is expected this fall (2018).
+Once we have enough feedback and testing of these changes, the original UI will be retired and everyone will get the new experience. That change is expected this fall (2018).
 
 ## How to get started?
 
-The internal preview site url is at [https://preview.poshtestgallery.com](https://preview.poshtestgallery.com). 
+The preview site url is [https://Preview.PowerShellGallery.Com](https://Preview.PowerShellGallery.Com). 
 Start by browsing to the site and checking out the new look.
 
-It is important to note that the preview.poshtestgallery.com site is an internal testing location. There is very little content in both this site and the production PowerShell Gallery. The main exception are PowerShellGet and the Azure modules published by the Azure SDK team. 
-
-To use this new site with PowerShellGet, you must create register this as a PS Repository, then specify that repository with the PowerShellGet cmdlets:
+To use this new site with PowerShellGet, you must create register this as a PS Repository, then specify that repository with the PowerShellGet cmdlets, as shown in the example below:
 
 ```powershell
-Register-PSRepository -Name PrivatePreview -SourceLocation https://preview.poshtestgallery.com/api/v2 
-Find-Module DSC* -Repository PrivatePreview
-Install-Module DSCTestModule -Repository PrivatePreview -Verbose
+Register-PSRepository -Name PSGalleryPreview -SourceLocation https://Preview.PowerShellGallery.Com/api/v2 
+Find-Module DSC* -Repository PSGalleryPreview
+Install-Module DSCTestModule -Repository PSGalleryPreview -Verbose
 ```
 
-**Note:** There are issues listed below about errors if you install any of the  modules that exist in both PowerShellGallery.com and the test environment. 
-
-If you want to publish something to the internal preview, please read the "Publishing to the Preview" instructions, below. 
+Note that Register-PSRepository only needs to be done once for each user, and persists across PowerShell sessions. 
 
 ## What would we like you to try out?
 Some of the newer features that we want people to try out are:
 
-* Help us validate CDN by downloading large modules, or modules with many dependencies. Azure modules are a good place to start.  
+* Help us validate CDN by downloading large modules, or modules with many dependencies. Azure modules are a good place to start. Please use the "Contact us" link in the Gallery if you encounter an error during download that includes the reason "End of Central Directory record could not be found." 
 * The new PowerShell Gallery Account management allows changing the email address, or the MSA account associated with a Gallery user. You should also check out notifications generated when your module is updated.
 * Please try publishing (important instructions are below). If you have multiple modules, try using different API keys to publish them. 
-* We want feedback for the default view on the new page for individual items (like Azure). The new page collapses out much of the detail shown previously – but are we showing what is needed most?
+* We want feedback for the default view on the new page for items - a module or a script. The new page collapses out much of the detail shown previously. Are we showing what is needed most?
 
 ## What is not working?
 
@@ -63,37 +58,45 @@ The list is organized generally by the page where the issue will most likely be 
 
 * PowerShellGet not yet updated to match PowerShell Gallery:
 An updated version (likely 1.6.6) of PowerShellGet is coming shortly. Until it is available, users must follow the instructions below to manually update NuGet.exe if they wish to publish to the PowerShell Gallery. 
-* Most the PowerShellGallery content is missing from Preview.Poshtestgallery: 
-The preview.poshtestgallery.com site is an internal testing location. There is very little content in both this site and the production PowerShell Gallery. The Azure modules published by the Azure SDK team are available here. 
 * I get failures trying to install the Azure modules from this site:
-When you try to re-install a module from a new location, you will need to specify "-Force". 
-As an example, the same versions of the Azure SDK team's modules are on both preview.poshtestgallery.com and powershellgallery.com.
-If you try to install the same version of an item that you already have, install-module will skip it.
-* Installation option for Azure Automation is not yet working: 
+The Preview PowerShell Gallery is seen and registered as a different location than PowerShellGallery.com. When you try to re-install a module from a new location, you will need to specify "-Force". 
+As an example, the same versions of the Azure SDK team's modules are on both preview.powershellgallery.com and powershellgallery.com. If you try to install the same version of an item that you already have, install-module will skip it.
+* The commenting system is gone:
+The Preview PowerShell Gallery does not show the Comments section, or previous comments, that are visible at the bottom of each item detail page in the PowerShell Gallery. That section is provided by the LiveFyre service. At this time, we are unable to keep comments aligned between the Preview and public PowerShell Gallery sites. Rather than have someone provide feedback that is lost, we have disabled the feature for now. If you wish to provide feedback on an item, please go to [PowerShellGallery.com](https://powershellgallery.com), locate the same item, and provide your feedback there. 
+* Installating to Azure Automation is not yet working: 
 Three installation options are listed on the details page for any item. The Azure Automation option replaces the previous "Deploy to Azure Automation", but it is not currently functioning.
-* The commenting system does not work for preview.poshtestgallery.com:
-At the bottom of each item detail page is a "Comments" section. That section is provided by the LiveFyre service. Since preview.poshtestgallery.com is a temporary environment, we have not registered it with LiveFyre. As a result, the commenting system does not currently accept any sign-in or updates. This is expected to be resolved when during our public preview.
-* The statistics page is still under construction: 
-The pages that provide download statistics for all items and for individual items are still under construction. We expect them to function properly, but they have not yet been updated with the same look as the other pages. 
 * Recent fixes in Deploy to Azure Automation are not in the preview:
-The PowerShell Gallery was recently updated to fix problems where items with complex dependency trees could not be deployed to Azure Automation. This change has not yet been applied to the Preview gallery.
+The PowerShell Gallery was recently updated to fix problems where items with complex dependency trees could not be deployed to Azure Automation. This change has not yet been applied to the Preview gallery. We will are working to correct this at the same time we correct the base functionality. 
 
 
-## How to publish a module to the private preview Gallery?
+## How to publish a module to the preview Gallery?
 
-**IMPORTANT NOTE:** We greatly appreciate help testing the internal preview Gallery, but it is our test environment. As we point out on the site's banner, we will be deleting content and accounts from this gallery once the preview period is over (September, at the earliest). We will try to give ample warning by changing the banner when we are getting close, and sending out an email to everyone we can reach who has created a new account. 
+As mentioned above, the same content and accounts that exist at PowerShellGallery.com are also available via Preview.PowerShellGallery.com. However, publishing via the new location does have some differences.
 
-As mentioned previously, the preview.poshtestgallery.com site is completely separate from PowerShellGallery.com. Very few people have accounts in this environment, so you will likely need to create your account here. Click on the "sign in" link, and follow the instructions to create your account, and let us know if you have any difficulties.  
+You must register a new PS Repository to publish to the PowerShell Gallery, then add the respository flag to your publish command, as in:
 
-Once you have created your account, please take a moment to check out the new features for managing accounts and publishing keys. 
+```powershell
+Register-PSRepository -Name PSGalleryPreview -SourceLocation https://Preview.PowerShellGallery.Com/api/v2 
+Publish-Module -Path 'C:\Projects\PowerShell\SuperModule' -NuGetApiKey "NotIncludedHere" -Repository PSGalleryPreview
+```
 
-You will need to upgrade your version of NuGet.exe to at least 4.1.0. You can upgrade by downloading NuGet.exe from https://www.nuget.org/downloads (latest version: https://dist.nuget.org/win-x86-commandline/latest/nuget.exe), and saving it within the PowerShellGet folder or under one of the paths specified in PATH environment variable value. We will be releasing an updated version of PowerShellGet shortly that will force this update, but for now this must be done manually. 
+Users who have published previously can use the same APIKey they have used for PowerShellGallery.com.
 
-After you have done this, you can publish normally by specifying "-Repository PrivatePreview". 
+You must upgrade your version of NuGet.exe to at least 4.1.0.  We will be releasing an updated version of PowerShellGet shortly that will force this update, but for now this must be done manually. You can upgrade by downloading NuGet.exe from https://www.nuget.org/downloads (latest version: https://dist.nuget.org/win-x86-commandline/latest/nuget.exe), and saving it within the PowerShellGet folder or under one of the paths specified in PATH environment variable value. You may use one of the two commands below, depending on whether you want the change for the current user or for all users:
+
+```powershell
+# Non-admin
+Invoke-WebRequest -Uri https://aka.ms/psget-nugetexe -OutFile "$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\PowerShellGet\NuGet.exe"
+```
+
+```powershell
+# Admin
+Invoke-WebRequest -Uri https://aka.ms/psget-nugetexe -OutFile "$env:ProgramData\Microsoft\Windows\PowerShell\PowerShellGet\NuGet.exe"
+```
 
 ## Advanced users please try this...
 
-Users who are willing should consider unregistering the default (PSGallery) repository, and using the internal preview as their primary or default PSRepository.  
+Users who are willing should consider unregistering the default (PSGallery) repository, and using the preview as their primary or default PSRepository.  
 
 It is not possible to change the registration for PSGallery to go to a different URL. Instead, what you must do is unregister PSGallery, and leaving only GalleryPreview registered, as in:
 
@@ -107,7 +110,7 @@ If the preview gallery is the only repository listed, it will be the default.  O
 To revert to using the production site, please use:
  
 ```powershell 
-Unregister-PSRepository –Name InternalPreview
+Unregister-PSRepository –Name PSGalleryPreview
 Register-PSRepository –Default
 ```
 
