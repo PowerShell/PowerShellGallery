@@ -7,7 +7,7 @@ title:  Preview PowerShell Gallery Release Notes
 # Preview PowerShell Gallery Release Notes
 
 ## What has changed?
-The PowerShell Gallery site is being updated to a new look, with some new features. Today, the changes are available via [https://Preview.PowerShellGallery.Com](https://Preview.PowerShellGallery.Com). 
+The PowerShell Gallery site is being updated to a new look, with some new features. Today, the changes are available via [https://www.Preview.PowerShellGallery.Com](https://www.Preview.PowerShellGallery.Com). 
 
 **Please try out our new site and give us feedback!**
 
@@ -28,13 +28,13 @@ Once we have enough feedback and testing of these changes, the original UI will 
 
 ## How to get started?
 
-The preview site url is [https://Preview.PowerShellGallery.Com](https://Preview.PowerShellGallery.Com). 
+The preview site url is [https://www.Preview.PowerShellGallery.Com](https://Preview.PowerShellGallery.Com). 
 Start by browsing to the site and checking out the new look.
 
 To use this new site with PowerShellGet, you must register this as a PS Repository, then specify that repository with the PowerShellGet cmdlets, as shown in the example below:
 
 ```powershell
-Register-PSRepository -Name PSGalleryPreview -SourceLocation https://Preview.PowerShellGallery.Com/api/v2 
+Register-PSRepository -Name PSGalleryPreview -SourceLocation https://www.Preview.PowerShellGallery.Com/api/v2 
 Find-Module DSC* -Repository PSGalleryPreview
 Install-Module DSCTestModule -Repository PSGalleryPreview -Verbose
 ```
@@ -56,8 +56,8 @@ If you encounter something that is not listed here, please create an entry in ou
 
 The list is organized generally by the page where the issue will most likely be encountered.
 
-* PowerShellGet not yet updated to match PowerShell Gallery:
-An updated version (likely 1.6.6) of PowerShellGet is coming shortly. Until it is available, users must follow the instructions below to manually update NuGet.exe if they wish to publish to the PowerShell Gallery. 
+* Publishing to Preview requires a new NuGet:
+Publishing to the Preview PowerShell Gallery requires a new NuGet.exe. An updated version (likely 1.6.6) of PowerShellGet is coming shortly that will include it. Until it is available, users must follow the instructions below to manually update NuGet.exe if they wish to publish to the PowerShell Gallery. 
 * I get failures trying to install the Azure modules from this site:
 The Preview PowerShell Gallery is seen and registered as a different location than PowerShellGallery.com. When you try to re-install a module from a new location, you will need to specify "-Force". 
 As an example, the same versions of the Azure SDK team's modules are on both preview.powershellgallery.com and powershellgallery.com. If you try to install the same version of an item that you already have, install-module will skip it.
@@ -65,9 +65,6 @@ As an example, the same versions of the Azure SDK team's modules are on both pre
 The Preview PowerShell Gallery does not show the Comments section, or previous comments, that are visible at the bottom of each item detail page in the PowerShell Gallery. That section is provided by the LiveFyre service. At this time, we are unable to keep comments aligned between the Preview and public PowerShell Gallery sites. Rather than have someone provide feedback that is lost, we have disabled the feature for now. If you wish to provide feedback on an item, please go to [PowerShellGallery.com](https://powershellgallery.com), locate the same item, and provide your feedback there. 
 * Installating to Azure Automation is not yet working: 
 Three installation options are listed on the details page for any item. The Azure Automation option replaces the previous "Deploy to Azure Automation", but it is not currently functioning.
-* Recent fixes in Deploy to Azure Automation are not in the preview:
-The PowerShell Gallery was recently updated to fix problems where items with complex dependency trees could not be deployed to Azure Automation. This change has not yet been applied to the Preview gallery. We will are working to correct this at the same time we correct the base functionality. 
-
 
 ## How to publish a module to the preview Gallery?
 
@@ -76,13 +73,13 @@ As mentioned above, the same content and accounts that exist at PowerShellGaller
 You must register a new PS Repository to publish to the PowerShell Gallery, then add the respository flag to your publish command, as in:
 
 ```powershell
-Register-PSRepository -Name PSGalleryPreview -SourceLocation https://Preview.PowerShellGallery.Com/api/v2 
+Register-PSRepository -Name PSGalleryPreview -SourceLocation https://www.Preview.PowerShellGallery.Com/api/v2 
 Publish-Module -Path 'C:\Projects\PowerShell\SuperModule' -NuGetApiKey "NotIncludedHere" -Repository PSGalleryPreview
 ```
 
 Users who have published previously can use the same APIKey they have used for PowerShellGallery.com.
 
-You must upgrade your version of NuGet.exe to at least 4.1.0.  We will be releasing an updated version of PowerShellGet shortly that will force this update, but for now this must be done manually. You can upgrade by downloading NuGet.exe from https://www.nuget.org/downloads (latest version: https://dist.nuget.org/win-x86-commandline/latest/nuget.exe), and saving it within the PowerShellGet folder or under one of the paths specified in PATH environment variable value. You may use one of the two commands below, depending on whether you want the change for the current user or for all users:
+You must upgrade your version of NuGet.exe to at least 4.1.0.  We will be releasing an updated version of PowerShellGet shortly that will force this update, but for now this must be done manually. You can upgrade by downloading NuGet.exe from https://www.nuget.org/downloads (latest version: https://dist.nuget.org/win-x86-commandline/latest/nuget.exe). You may use one of the two commands below, depending on whether you want the change for the current user or for all users:
 
 ```powershell
 # Non-admin
