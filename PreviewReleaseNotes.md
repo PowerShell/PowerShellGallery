@@ -31,7 +31,7 @@ Once we have enough feedback and testing of these changes, the original UI will 
 The preview site url is [https://Preview.PowerShellGallery.Com](https://Preview.PowerShellGallery.Com). 
 Start by browsing to the site and checking out the new look.
 
-To use this new site with PowerShellGet, you must create register this as a PS Repository, then specify that repository with the PowerShellGet cmdlets, as shown in the example below:
+To use this new site with PowerShellGet, you must register this as a PS Repository, then specify that repository with the PowerShellGet cmdlets, as shown in the example below:
 
 ```powershell
 Register-PSRepository -Name PSGalleryPreview -SourceLocation https://Preview.PowerShellGallery.Com/api/v2 
