@@ -33,6 +33,7 @@ Register-PSRepository -Name PSGalleryPreview -SourceLocation https://www.Preview
 Find-Module DSC* -Repository PSGalleryPreview
 Install-Module DSCTestModule -Repository PSGalleryPreview -Verbose
 ```
+Note that while both PSGallery and PSGalleryPreview repositories are registered, you will see errors when running Install-Module or Install-Script, because the same items will be returned by both repositories. Either specify the repository explicitly, as above, or see "Advanced users please try this" below.
 
 Note that Register-PSRepository only needs to be done once for each user, and persists across PowerShell sessions. 
 
@@ -51,14 +52,14 @@ If you encounter something that is not listed here, please create an entry in ou
 
 The list is organized generally by the page where the issue will most likely be encountered.
 
-* Publishing to Preview requires a new NuGet:
+* **Publishing to Preview requires a newer NuGet**:
 Publishing to the Preview PowerShell Gallery requires a new NuGet.exe. An updated version (likely 1.6.6) of PowerShellGet is coming shortly that will include it. Until it is available, users must follow the instructions below to manually update NuGet.exe if they wish to publish to the PowerShell Gallery. 
-* I get failures trying to install the Azure modules from this site:
+* **I get failures trying to install the Azure modules from this site**:
 The Preview PowerShell Gallery is seen and registered as a different location than PowerShellGallery.com. When you try to re-install a module from a new location, you will need to specify "-Force". 
 As an example, the same versions of the Azure SDK team's modules are on both preview.powershellgallery.com and powershellgallery.com. If you try to install the same version of an item that you already have, install-module will skip it.
-* The commenting system is gone:
+* **The commenting system is gone**:
 The Preview PowerShell Gallery does not show the Comments section, or previous comments, that are visible at the bottom of each item detail page in the PowerShell Gallery. That section is provided by the LiveFyre service. At this time, we are unable to keep comments aligned between the Preview and public PowerShell Gallery sites. Rather than have someone provide feedback that is lost, we have disabled the feature for now. If you wish to provide feedback on an item, please go to [PowerShellGallery.com](https://powershellgallery.com), locate the same item, and provide your feedback there. 
-* Installating to Azure Automation is not yet working: 
+* **Installing to Azure Automation is not yet working**: 
 Three installation options are listed on the details page for any item. The Azure Automation option replaces the previous "Deploy to Azure Automation", but it is not currently functioning.
 
 ## How to publish a module to the preview Gallery?
