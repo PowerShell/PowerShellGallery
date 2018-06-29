@@ -1,9 +1,4 @@
-﻿---
-ms.date:  06/21/18
-contributor:  JKeithB
-keywords:  gallery,powershell,cmdlet,psgallery
-title:  Preview PowerShell Gallery Release Notes
----
+
 # Preview PowerShell Gallery Release Notes
 
 ## What has changed?
