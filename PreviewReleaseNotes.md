@@ -49,7 +49,7 @@ Some of the newer features that we want people to try out are:
 * Please try publishing (important instructions are below). If you have multiple modules, try using different API keys to publish them. 
 * We want feedback for the default view on the new page for items - a module or a script. The new page collapses out much of the detail shown previously. Are we showing what is needed most?
 
-## What is not working?
+## What is not right?
 
 The following things are known to not work as expected. 
 If you encounter something that is not listed here, please create an entry in our [issues list](https://github.com/PowerShell/PowerShellGallery/issues). 
@@ -65,6 +65,8 @@ As an example, the same versions of the Azure SDK team's modules are on both pre
 The Preview PowerShell Gallery does not show the Comments section, or previous comments, that are visible at the bottom of each item detail page in the PowerShell Gallery. That section is provided by the LiveFyre service. At this time, we are unable to keep comments aligned between the Preview and public PowerShell Gallery sites. Rather than have someone provide feedback that is lost, we have disabled the feature for now. If you wish to provide feedback on an item, please go to [PowerShellGallery.com](https://powershellgallery.com), locate the same item, and provide your feedback there. 
 * Installating to Azure Automation is not yet working: 
 Three installation options are listed on the details page for any item. The Azure Automation option replaces the previous "Deploy to Azure Automation", but it is not currently functioning.
+* Item statistics page: 
+There are 2 options on the item statistics page that do not apply to the PowerShell Gallery, and will be removed: client name and client version. These are left over from our port of the NuGet code. 
 
 ## How to publish a module to the preview Gallery?
 
@@ -112,3 +114,11 @@ Register-PSRepository –Default
 ```
 
 Please note: The preview URL will go away when we transition the changes in preview to the production PowerShell Gallery, which will happen in the fall of 2018. This will break any automation that uses the preview URL as its target. We will, of course, be communicating that change via the preview site and other announcements.  
+
+## Managing API Keys
+
+There are important new features available for creating the API key used when publishing items. The full documentation is currently in the [PowerShell docs github repo](https://github.com/PowerShell/PowerShell-Docs/blob/staging/gallery/how-to/publishing-items/creating-apikeys.md). 
+
+Any API key associated with your account will work when publishing to either PowerShellGallery.com or Preview.PowershellGallery.com. 
+
+__Important note:__ If you have published items to PowerShellGallery.com, you have an existing Full Access API key that has no expiration. For security reasons, the new API key management system will not create keys with no expiration. If you delete the Full Access API key using the Preview Powershell Gallery UI, you can only re-create it using PowerShellGallery.com. That will  only be true until we switch over to the new, more secure system, at which time you will not be able to create any key that has no expiration date. 
