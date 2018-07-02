@@ -113,7 +113,7 @@ Please note: The preview URL will go away when we transition the changes in prev
 
 ## Managing API Keys
 
-There are important new features available for creating the API key used when publishing items. The full documentation is currently in the [PowerShell docs github repo](https://github.com/PowerShell/PowerShell-Docs/blob/staging/gallery/how-to/publishing-items/creating-apikeys.md). 
+There are important new features available for creating the API key used when publishing items. The full documentation is currently in the [PowerShell docs github repo](https://github.com/PowerShell/PowerShell-Docs/blob/psgallery-preview/gallery/how-to/managing-profile/creating-APIkeys.md). 
 
 Any API key associated with your account will work when publishing to either PowerShellGallery.com or Preview.PowershellGallery.com. 
 
