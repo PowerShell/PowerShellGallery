@@ -59,6 +59,8 @@ The Preview PowerShell Gallery is seen and registered as a different location th
 As an example, the same versions of the Azure SDK team's modules are on both preview.powershellgallery.com and powershellgallery.com. If you try to install the same version of an item that you already have, install-module will skip it.
 * **The commenting system is gone**:
 The Preview PowerShell Gallery does not show the Comments section, or previous comments, that are visible at the bottom of each item detail page in the PowerShell Gallery. That section is provided by the LiveFyre service. At this time, we are unable to keep comments aligned between the Preview and public PowerShell Gallery sites. Rather than have someone provide feedback that is lost, we have disabled the feature for now. If you wish to provide feedback on an item, please go to [PowerShellGallery.com](https://powershellgallery.com), locate the same item, and provide your feedback there. 
+* **I cannot change my sign-in account**:
+The new sign-in experience does not give any chance to provide a login ID if the user is already logged in to a Microsoft or Azure Active Directory account. This is something we are working on with the NuGet team and expect to correct in the near future. Until that time this can be worked around by using an InPrivate (Edge/IE) or Incognito (Chrome) session. This will ensure that you receive a prompt for which account to use. 
 * **Installing to Azure Automation is not yet working**: 
 Three installation options are listed on the details page for any item. The Azure Automation option replaces the previous "Deploy to Azure Automation", but it is not currently functioning.
 * Item statistics page: 
