@@ -4,17 +4,17 @@ PowerShell Gallery Status
 =========================
 ### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Operating with Issues__
 
-### 9/13/2018 - Azure Automation integration is not working
+### 9/13/2018 - Azure Automation integration was not working
 
-__Status: Active
+__Status: Resolved
 
-__Summary of Impact__: The interaction between Azure Automation and PowerShell Gallery are currently not functioning. This will impact the links to the PowerShell Gallery from inside Azure Automation, and the link in the PowerShell Gallery to Deploy to Azure Automation. 
+__Summary of Impact__: The interaction between Azure Automation and PowerShell Gallery was broken temporarily. The links to the PowerShell Gallery from inside Azure Automation were not functioning. 
 
-__Root Cause__: Investigating, cause believed to be found. See next steps.
+__Root Cause__: A configuration change was applied to Azure Automation that corrected the issue.
 
-__Resolution__: 
+__Resolution__: Changes to data structures in the new PowerShell Gallery resulted in the Automation Gallery not being able to interpret the data. 
 
-__Next Steps__: A configuration change is needed to connect Azure Automation to PSGallery. Change is in process, ETA for rollout is approximately noon PDT on September 14. Will update this notice as things change. 
+__Next Steps__: A configuration change has been applied, the issue is resolved to the best of our knowledge. 
 
 
 ### 9/13/2018 - Link to Facebook not working
