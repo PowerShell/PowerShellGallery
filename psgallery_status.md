@@ -10,11 +10,11 @@ __Status: Active
 
 __Summary of Impact__: The interaction between Azure Automation and PowerShell Gallery are currently not functioning. This will impact the links to the PowerShell Gallery from inside Azure Automation, and the link in the PowerShell Gallery to Deploy to Azure Automation. 
 
-__Root Cause__: Investigating
+__Root Cause__: Investigating, cause believed to be found. See next steps.
 
 __Resolution__: 
 
-__Next Steps__: 
+__Next Steps__: A configuration change is needed to connect Azure Automation to PSGallery. Change is in process, ETA for rollout is approximately noon PDT. Will update this notice as things change. 
 
 
 ### 9/13/2018 - Link to Facebook not working
