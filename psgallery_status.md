@@ -2,12 +2,19 @@
 
 PowerShell Gallery Status
 =========================
-### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Operating Normally__
+### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Operating with Minor Issues__
 
+### 9/13/2018 - Link to Facebook not working
 
-This page will be updated by the PowerShell Gallery operations team when there are issues identified for the PowerShell Gallery that affect its use. 
-The page will be updated as issues evolve, from reported to active to resolved. 
+__Status: Active
 
+__Summary of Impact__: The link from the package details pages to Facebook is not currently working. Root cause is being investigated. As a temporary workaround, users need to manually create entries in Facebook that link to their PowerShell Gallery items.
+
+__Root Cause__: Investigating
+
+__Resolution__: 
+
+__Next Steps__: 
 
 
 ## History of previous issues
@@ -18,11 +25,11 @@ __Status: RESOLVED__
 
 __Summary of Impact__: The PowerShell Gallery experienced a period of very high latency, resulting in intermittent connection issues, beginning approximately 5pm (PDT) 10/10/17. While resolving the issue, the site was taken offline for 2 hours starting approximately 10pm (PDT). The site was restored shortly before midnight 10/10/2017. 
  
-__Root Cause__: The root cause of the high latency is still being investigated.
+__Root Cause__: 
 
 __Resolution__: The web services had to be taken offline and restored in order to address the primary issue. 
 
-__Next Steps__: The root cause for the original issue is being investigated.
+__Next Steps__: 
 
 ### 06/01/2017 - Deploy to Azure Automation Currently Unavailable
 
