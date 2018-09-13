@@ -2,7 +2,20 @@
 
 PowerShell Gallery Status
 =========================
-### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Operating with Minor Issues__
+### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Operating with Issues__
+
+### 9/13/2018 - Azure Automation integration is not working
+
+__Status: Active
+
+__Summary of Impact__: The interaction between Azure Automation and PowerShell Gallery are currently not functioning. This will impact the links to the PowerShell Gallery from inside Azure Automation, and the link in the PowerShell Gallery to Deploy to Azure Automation. 
+
+__Root Cause__: Investigating
+
+__Resolution__: 
+
+__Next Steps__: 
+
 
 ### 9/13/2018 - Link to Facebook not working
 
