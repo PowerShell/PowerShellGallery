@@ -6,7 +6,7 @@ PowerShell Gallery Status
 
 ### 9/13/2018 - Azure Automation integration was not working
 
-__Status: Resolved
+__Status: Resolved__
 
 __Summary of Impact__: The interaction between Azure Automation and PowerShell Gallery was broken temporarily. The links to the PowerShell Gallery from inside Azure Automation were not functioning. 
 
@@ -19,7 +19,7 @@ __Next Steps__: A configuration change has been applied, the issue is resolved t
 
 ### 9/13/2018 - Link to Facebook not working
 
-__Status: Active
+__Status: Active__
 
 __Summary of Impact__: The link from the package details pages to Facebook is not currently working. Root cause is being investigated. As a temporary workaround, users need to manually create entries in Facebook that link to their PowerShell Gallery items.
 
