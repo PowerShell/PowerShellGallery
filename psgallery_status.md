@@ -1,20 +1,19 @@
 
-
 PowerShell Gallery Status
 =========================
 ### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Operating with Issues__
 
-### 9/13/2018 - Azure Automation integration was not working
+### 9/13/2018 - Sign In link for LiveFyre / Commenting System not working
 
-__Status: Resolved__
+__Status: Active__
 
-__Summary of Impact__: The interaction between Azure Automation and PowerShell Gallery was broken temporarily. The links to the PowerShell Gallery from inside Azure Automation were not functioning. 
+__Summary of Impact__: The comments section of the item detail pages requires a login to LiveFyre to add a comment. There are two ways to log in: using the Sign In link above the  then typing your comment, or typing the comment first then using "Post Comment As" button below the comment. The Sign In link is not working at this time, but the Post Comment As button is.
 
-__Root Cause__: A configuration change was applied to Azure Automation that corrected the issue.
+__Root Cause__: Investigating
 
-__Resolution__: Changes to data structures in the new PowerShell Gallery resulted in the Automation Gallery not being able to interpret the data. 
+__Resolution__: 
 
-__Next Steps__: A configuration change has been applied, the issue is resolved to the best of our knowledge. 
+__Next Steps__: 
 
 
 ### 9/13/2018 - Link to Facebook not working
@@ -28,6 +27,18 @@ __Root Cause__: Investigating
 __Resolution__: 
 
 __Next Steps__: 
+
+### 9/13/2018 - Azure Automation integration was not working
+
+__Status: Resolved__
+
+__Summary of Impact__: The interaction between Azure Automation and PowerShell Gallery was broken temporarily. The links to the PowerShell Gallery from inside Azure Automation were not functioning. 
+
+__Root Cause__: A configuration change was applied to Azure Automation that corrected the issue.
+
+__Resolution__: Changes to data structures in the new PowerShell Gallery resulted in the Automation Gallery not being able to interpret the data. 
+
+__Next Steps__: A configuration change has been applied, the issue is resolved to the best of our knowledge. 
 
 
 ## History of previous issues
