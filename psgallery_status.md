@@ -26,13 +26,13 @@ __Next Steps__:
 
 ### 9/13/2018 - Link to Facebook not working
 
-__Status: Active__
+__Status: Resolved__
 
 __Summary of Impact__: The link from the package details pages to Facebook is not currently working. Root cause is being investigated. As a temporary workaround, users need to manually create entries in Facebook that link to their PowerShell Gallery items.
 
-__Root Cause__: Investigating
+__Root Cause__: Related to update to newer gallery version
 
-__Resolution__: 
+__Resolution__: Due to historical low usage, all the social media buttons (FaceBook, Twitter and LinkedIn) have been removed from the site.
 
 __Next Steps__: 
 
