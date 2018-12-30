@@ -3,6 +3,10 @@ PowerShell Gallery Status
 =========================
 ### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Operating with Issues__
 
+### 12/30/2018 - Displaying file contents failing with 404 Error
+
+The issue is under investigation
+
 ### 10/24/2018 - Some downloads failing with 'End of Central Directory Record Could not be found'
 
 __Status: Resolved__
