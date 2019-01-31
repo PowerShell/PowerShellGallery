@@ -11,11 +11,10 @@ We started this work to improve the performance of acquiring items from the Powe
 Most of the new features come from the latest NuGet server code, as we are aligning more with them. Some of the features in this preview include:
 
 * Improved download performance provided via CDN
-* Enhanced security for publishers, including support for 2FA, multiple publishing keys
+* Enhanced security for publishers, including multiple publishing keys, and never displaying keys (see Managing API Keys, below)
 * Account management support for changing email address or login account
 * Direct download of items (as .Nupkg files)
 * UI updated to be more responsive 
-
 
 All items in this preview will also be available in the production PowerShellGallery site. The [Preview PowerShell Gallery](https://preview.powershellgallery.com) interacts with all the same items, and tracks all the same statistics, as [PowerShellGallery.com](https://powershellgallery.com)  
 
@@ -116,6 +115,8 @@ Please note: The preview URL will go away when we transition the changes in prev
 ## Managing API Keys
 
 There are important new features available for creating the API key used when publishing items. The full documentation is currently in the [PowerShell docs github repo](https://github.com/PowerShell/PowerShell-Docs/blob/psgallery-preview/gallery/how-to/managing-profile/creating-APIkeys.md). 
+
+Publishing keys are never displayed in the latest UI, and are only available to be copied immediately after they are generated. This is covered in the [Creating API Keys](https://github.com/PowerShell/PowerShell-Docs/blob/psgallery-preview/gallery/how-to/managing-profile/creating-APIkeys.md) documentation. 
 
 Any API key associated with your account will work when publishing to either PowerShellGallery.com or Preview.PowershellGallery.com. 
 
