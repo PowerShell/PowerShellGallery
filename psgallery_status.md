@@ -1,13 +1,13 @@
 
 PowerShell Gallery Status
 =========================
-### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Unavailable__
+### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Working Normally__
 
 ### 6/11/2019 - PowerShellGallery.com is not responding
 
-__Status: Active__
+__Status: Resolved__
 
-__Summary of Impact__: PowerShellGallery.com is unavailable. We are actively investigating the issue and will update shortly.
+__Summary of Impact__: PowerShellGallery.com was unavailable between 8:15 AM and 11:15 AM Pacific Time. Preliminary root cause is that this was due to an incorrect configuration update. More detail will be available once root cause has been analyzed thoroughly.
 
 ### 10/24/2018 - Some downloads failing with 'End of Central Directory Record Could not be found'
 
