@@ -1,20 +1,13 @@
 
 PowerShell Gallery Status
 =========================
-### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Operating with Issues__
+### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Unavailable__
 
-### 1/13/2019 - Sign In link for LiveFyre / Commenting System not working
+### 6/11/2019 - PowerShellGallery.com is not responding
 
 __Status: Active__
 
-__Summary of Impact__: The comments section of the item detail pages requires a login to LiveFyre to add a comment. There are two ways to log in: using the Sign In link above the  then typing your comment, or typing the comment first then using "Post Comment As" button below the comment. The Sign In link is not working at this time, but the Post Comment As button is. Some users have also reported issues with the 'Post Comment As' option.
-
-__Root Cause__: Investigating
-
-__Resolution__: 
-
-__Next Steps__: 
-
+__Summary of Impact__: PowerShellGallery.com is unavailable. We are actively investigating the issue and will update shortly.
 
 ### 10/24/2018 - Some downloads failing with 'End of Central Directory Record Could not be found'
 
