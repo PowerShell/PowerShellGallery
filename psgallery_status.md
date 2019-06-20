@@ -7,9 +7,11 @@ PowerShell Gallery Status
 
 __Status: Resolved__
 
-__Summary of Impact__: PowerShellGallery.com was unavailable between 8:15 AM and 11:15 AM Pacific Time. This occurred because of a routine configuration update the previous day: we updated a password used for sending email. The new password contained a character which was not valid as part of a URL, but the script used to perform the update did not correctly escape the character. This meant that each service instance as it restarted would read the new configuration and fail to load. This would have been caught in the test gallery, but the script also silently failed to restart the service instances, so nothing went wrong immediately and the configuration change was applied to the production gallery as well. As each service instance restarted afterwards, it entered a failed state. At the start of the incident, the last instances restarted and the service became unavailable.
+__Summary of Impact__: PowerShellGallery.com was unavailable between 8:15 AM and 11:15 AM Pacific Time. 
 
-Changes have been made to the script and process used to roll out configuration changes to prevent this problem from recurring, and the service itself has also been made more robust against this kind of issue. 
+__Root Cause__: This occurred because of a routine configuration update the previous day: we updated a password used for sending email. The new password contained a character which was not valid as part of a URL, but the script used to perform the update did not correctly escape the character. This meant that each service instance as it restarted would read the new configuration and fail to load. This would have been caught in the test gallery, but the script also silently failed to restart the service instances, so nothing went wrong immediately and the configuration change was applied to the production gallery as well. As each service instance restarted afterwards, it entered a failed state. At the start of the incident, the last instances restarted and the service became unavailable.
+
+__Resolution__: Changes have been made to the script and process used to roll out configuration changes to prevent this problem from recurring, and the service itself has also been made more robust against this kind of issue. 
 
 ### 10/24/2018 - Some downloads failing with 'End of Central Directory Record Could not be found'
 
