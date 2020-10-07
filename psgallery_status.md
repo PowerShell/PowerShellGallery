@@ -9,17 +9,6 @@ __Status: Under Investigation__
 
 __Summary of Impact__: PowerShellGallery.com is experiencing lags and low availability.  Further updates will be made pending mitigation and resolution.  
 
-
-### 10/24/2018 - Some downloads failing with 'End of Central Directory Record Could not be found'
-
-__Status: Resolved__
-
-__Summary of Impact__: Users in some regions reported issues downloading some packages. The downloads reported an error similar to: "Install-Package : Package 'AzureRM.profile' failed to be installed because: End of Central Directory record could not be found.".
-
-This was due to an error in CDN configuration which lead to an invalid file being cached and served by some CDN regions. The issue is now believed resolved, please contact cgadmin@microsoft.com if you still see this problem.
-
-
-
 ### 6/11/2019 - PowerShellGallery.com is not responding
 
 __Status: Resolved__
