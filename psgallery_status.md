@@ -5,9 +5,11 @@ PowerShell Gallery Status
 
 ### 10/7/2020 - PowerShellGallery.com is experiencing low availability that may result in an inability to install package or access data on the website.
 
-__Status: Under Investigation__
+__Status: Resolved__
 
 __Summary of Impact__: PowerShellGallery.com is experiencing lags and low availability.  Further updates will be made pending mitigation and resolution.  
+
+__Root Cause__: Under investigation
 
 ### 6/11/2019 - PowerShellGallery.com is not responding
 
