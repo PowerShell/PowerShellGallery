@@ -1,7 +1,7 @@
 
 PowerShell Gallery Status
 =========================
-### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Experiencing Low Availability__
+### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Operating with Statistic Errors__
 
 ### 10/7/2020 - PowerShellGallery.com is experiencing low availability that may result in an inability to install package or access data on the website.
 
