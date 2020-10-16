@@ -3,6 +3,10 @@ PowerShell Gallery Status
 =========================
 ### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Operating with Statistic Errors__
 
+### 10/15/2020 - PowerShellGallery.com may temporarily experience latency and/or low availability 
+
+Database updates will be made on Monday, October 19th at 9am and will last 10 minutes.  The update will lock specific tables in the database and may potentially impact search requests made to the gallery.  This should not impact package downloads. 
+
 ### 10/7/2020 - PowerShellGallery.com is experiencing low availability that may result in an inability to install package or access data on the website.
 
 __Status: Resolved__
