@@ -3,7 +3,13 @@ PowerShell Gallery Status
 =========================
 ### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Operating with Statistic Errors__
 
-### 10/15/2020 - PowerShellGallery.com may temporarily experience latency and/or low availability 
+30/10/2020 - PowerShellGallery.com has CDN is down preventing packages from being downloaded and availability for the gallery itself has been extremely low 
+
+Hi all, we currently have an outage and are working on resolving it. Our CDN is down preventing packages from being downloaded and availability for the gallery itself has been extremely low.
+
+
+
+## 10/15/2020 - PowerShellGallery.com may temporarily experience latency and/or low availability 
 
 Database updates will be made on Monday, October 19th at 9am and will last 10 minutes.  The update will lock specific tables in the database and may potentially impact search requests made to the gallery.  This should not impact package downloads. 
 
