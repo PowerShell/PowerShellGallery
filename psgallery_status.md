@@ -3,7 +3,7 @@ PowerShell Gallery Status
 =========================
 ### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Operating with Statistic Errors__
 
-30/10/2020 - PowerShellGallery.com has CDN is down preventing packages from being downloaded and availability for the gallery itself has been extremely low 
+30/10/2020 - PowerShellGallery.com CDN is down preventing packages from being downloaded and availability for the gallery itself has been extremely low 
 
 Hi all, we currently have an outage and are working on resolving it. Our CDN is down preventing packages from being downloaded and availability for the gallery itself has been extremely low.
 
