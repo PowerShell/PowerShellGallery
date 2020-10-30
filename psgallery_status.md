@@ -1,13 +1,19 @@
 
 PowerShell Gallery Status
 =========================
-### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Experiencing a continued outage as of 10/30 at 18:15 UTC__
 
-__Status: Under investigation
+### 10/30/2020 18:15 UTC The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Experiencing a continued outage
+
+__Status: Resolved__
 
 __Summary of Impact__: PowerShellGallery.com is experiencing an outage.  Users will be unable to access the gallery or download packages.  
 
-__Root Cause__: Under investigation
+__Root Cause__: Work was happening to migrate data lost from the last outage to get the statistics up-to-date.  However, an error in configuration of the SQL
+cluster resulted in the gallery front end not able to authenticate with the SQL backend.  Unfortunately, it took awhile to figure this out.
+Once that was identified, the SQL configuration was fixed and validated that basic operations are working again.  This means for now the statistics
+are not complete and we'll look at fixing that later after reviewing how this mistake occurred.  We are actively monitoring the gallery to ensure
+it maintains proper operation across all regions.
+
 
 ### 10/15/2020 - PowerShellGallery.com may temporarily experience latency and/or low availability 
 
