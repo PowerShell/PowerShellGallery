@@ -8,11 +8,7 @@ __Status: Resolved__
 
 __Summary of Impact__: PowerShellGallery.com is experiencing an outage.  Users will be unable to access the gallery or download packages.  
 
-__Root Cause__: Work was happening to migrate data lost from the last outage to get the statistics up-to-date.  However, an error in configuration of the SQL
-cluster resulted in the gallery front end not able to authenticate with the SQL backend.  Unfortunately, it took awhile to figure this out.
-Once that was identified, the SQL configuration was fixed and validated that basic operations are working again.  This means for now the statistics
-are not complete and we'll look at fixing that later after reviewing how this mistake occurred.  We are actively monitoring the gallery to ensure
-it maintains proper operation across all regions.
+__Root Cause__: Work was happening to migrate data lost from the last outage to get the statistics up-to-date.  However, an update to the database caused extremely high CPU/DTU utilization which tied up cloud service resources.  In an effort to mitigate this issue the production database was restored to a point in time where the database was in a stable state, however this restore caused an error in the configuration of the SQL cluster that resulted in the gallery front end not able to authenticate with the SQL backend.  Unfortunately, it took awhile to figure this out. Once that was identified, the SQL configuration was fixed and validated that basic operations are working again.  This means for now the statistics are not complete and we'll look at fixing that later after reviewing how this mistake occurred.  We are actively monitoring the gallery to ensure it maintains proper operation across all regions.
 
 
 ### 10/15/2020 - PowerShellGallery.com may temporarily experience latency and/or low availability 
