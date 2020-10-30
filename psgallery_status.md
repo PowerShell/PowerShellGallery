@@ -1,7 +1,7 @@
 
 PowerShell Gallery Status
 =========================
-### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Experiencing an outage as of 10/30 at 06:03AM UTC__
+### The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Experiencing a continued outage as of 10/30 at 18:15 UTC__
 
 __Status: Under investigation
 
