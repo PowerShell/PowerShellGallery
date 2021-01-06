@@ -2,6 +2,10 @@
 PowerShell Gallery Status
 =========================
 
+### 01/07/2020 23:14 UTC The PowerShell Gallery is currently: Experiencing an outage
+
+__Status: Unresolved__
+
 ### 10/30/2020 18:15 UTC The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Experiencing a continued outage
 
 __Status: Resolved__
