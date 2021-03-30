@@ -1,6 +1,16 @@
 
 PowerShell Gallery Status
 =========================
+### 03/22/2020 02:30 UTC The [PowerShell Gallery](https://powershellgallery.com) was unable via HTTPS.
+
+__Status: Resolved__
+
+__Summary of Impact__: Users were unable to access the gallery or download packages using HTTPS.  
+
+__Root Cause__: In the last few months we addressed some internal compliance mandates to autorotate our certificates every 3 months. The renewal for these certs was set to 80% of the lifespan of the cert. Because our certificates were valid for a year this meant we had nealry 3 months to do a deployment in order to update the thumbprint to reference the new certificate (a timeframe in which our deployment cadence fell within). Because the validity period is now only 3 months, it was renewed only about 8 days before the old cert became invalid.  Thumbprint values have a Key Vault secret reference in the repository and this value gets retrieved and updated in the cloud service configuration file whenever a new cloud service is deployed. We are in the process of automating this process so that a deployment is not necessary to update a cert's thumbprint and thumbprints are updated upon cert renewal.
+
+
+
 
 ### 10/30/2020 18:15 UTC The [PowerShell Gallery](https://powershellgallery.com) is currently:  __Experiencing a continued outage
 
