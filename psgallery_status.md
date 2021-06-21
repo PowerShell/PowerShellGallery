@@ -1,7 +1,7 @@
 
 PowerShell Gallery Status
 =========================
-### 03/22/2020 02:30 UTC The [PowerShell Gallery](https://powershellgallery.com) was unavailable via HTTPS.
+### 2021-06-03 02:28 UTC The [PowerShell Gallery](https://powershellgallery.com) was unavailable via HTTPS.
 
 __Status: Resolved__
 
