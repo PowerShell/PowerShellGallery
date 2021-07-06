@@ -1,7 +1,7 @@
 
 PowerShell Gallery Status
 =========================
-### 06/03/2021 20:58 UTC The [PowerShell Gallery](https://powershellgallery.com) is experiencing latency due to lower availibility with CDN.
+### July 6th, 2021 20:58 UTC The [PowerShell Gallery](https://powershellgallery.com) is experiencing latency due to lower availibility with CDN.
 
 __Status: On-going__
 
