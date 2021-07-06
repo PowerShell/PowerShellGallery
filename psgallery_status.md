@@ -1,6 +1,16 @@
 
 PowerShell Gallery Status
 =========================
+### 06/03/2021 20:58 UTC The [PowerShell Gallery](https://powershellgallery.com) is experiencing latency due to lower availibility with CDN.
+
+__Status: On-going__
+
+__Summary of Impact__: Users may experience latency when interacting with the Gallery, particularly when installing modules or scripts.
+
+__Root Cause__: Since about 08:30 UTC the PowerShellGallery has experienced intermitten latency due to drops in availability with our CDN.  We believed this issue to be resolved at 16:03 UTC, but since 20:00 UTC availability has staggered between 20-80% availability.
+
+Verizon supports our CDN and we have reached out to them to get support with the sudden drops.  We will continue to update our status as we figure out the root cause of this issue.    
+
 ### 06/03/2021 02:28 UTC The [PowerShell Gallery](https://powershellgallery.com) was unavailable via HTTPS.
 
 __Status: Resolved__
