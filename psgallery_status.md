@@ -3,7 +3,7 @@ PowerShell Gallery Status
 =========================
 ### July 6th, 2021 20:58 UTC The [PowerShell Gallery](https://powershellgallery.com) is experiencing latency due to lower availibility with CDN.
 
-__Status: On-going__
+__Status: Resolved__
 
 __Summary of Impact__: Users may experience latency when interacting with the Gallery, particularly when installing modules or scripts.
 
