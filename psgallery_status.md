@@ -4,12 +4,12 @@ PowerShell Gallery Status
 ### August 17th, 2021 20:45 UTC The [PowerShell Gallery](https://powershellgallery.com) is having issues with latency.
 There is currently very low availability, with timeout errors when attempting to access the PSGallery.
 
-__Status: Investigating__
+__Status: Resolved__
 
 ### August 17th, 2021 20:00 UTC The [PowerShell Gallery](https://powershellgallery.com) is having issues allowing users to log in to accounts.
 Users are currently unable to log in due to a an error with the Azure active directory app registration.  This issue is currently being investigated and new registrations are being created.
 
-__Status: Investigating__
+__Status: Resolved__
 
 ### July 6th, 2021 20:58 UTC The [PowerShell Gallery](https://powershellgallery.com) is experiencing latency due to lower availibility with CDN.
 
