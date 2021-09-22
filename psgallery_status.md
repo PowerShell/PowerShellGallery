@@ -1,6 +1,13 @@
 
 PowerShell Gallery Status
 =========================
+### September 22nd, 2021
+From Monday, September 27th to Thursday, September 30th a migration will occur to a new (ARM based) cloud service. We do not anticipate that this will interrupt traffic or interfer with Gallery access, but would like to notify users beforehand in case of unanticipated side effects.
+
+If there are any availability issues during this time frame, please open an issue in the Gallery GitHub, or reach out to cgadmin@microsoft.com.
+
+We'll be monitoring both closely to keep an eye on any erring behavior. 
+
 ### August 17th, 2021 20:45 UTC The [PowerShell Gallery](https://powershellgallery.com) is having issues with latency.
 There is currently very low availability, with timeout errors when attempting to access the PSGallery.
 
