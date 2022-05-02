@@ -8,6 +8,12 @@ If there are any availability issues during this time frame, please open an issu
 
 We'll be monitoring both closely to keep an eye on any erring behavior. 
 
+
+### May 2nd, 2021 16:41 UTC The [PowerShell Gallery](https://powershellgallery.com) is having issues with latency.
+For the past week there have been reports of delays and extreme slowness with the PSGallery.  We're putting all our efforts into addressing this and more seriously looking into better ways to optimize our service. 
+
+__Status: Ongoing__
+
 ### August 17th, 2021 20:45 UTC The [PowerShell Gallery](https://powershellgallery.com) is having issues with latency.
 There is currently very low availability, with timeout errors when attempting to access the PSGallery.
 
