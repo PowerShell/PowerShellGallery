@@ -4,7 +4,7 @@ PowerShell Gallery Status
 ### June 14th, 2022  The [PowerShell Gallery](https://powershellgallery.com) is having issues with "sign in".
 The team is currently determining the root cause of this issue and is working to solve as quickly as possible. 
 
-__Status: In progress__
+__Status: Resolved__
 
 ### May 2nd, 2022 16:41 UTC The [PowerShell Gallery](https://powershellgallery.com) is having issues with latency.
 For the past week there have been reports of delays and extreme slowness with the PSGallery.  We're putting all our efforts into addressing this and more seriously looking into better ways to optimize our service. 
