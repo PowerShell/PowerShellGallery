@@ -1,7 +1,7 @@
 
 PowerShell Gallery Status
 =========================
-### June 14nd, 2022  The [PowerShell Gallery](https://powershellgallery.com) is having issues with "sign in".
+### June 14th, 2022  The [PowerShell Gallery](https://powershellgallery.com) is having issues with "sign in".
 The team is currently determining the root cause of this issue and is working to solve as quickly as possible. 
 
 __Status: In progress__
