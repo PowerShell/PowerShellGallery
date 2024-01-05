@@ -2,6 +2,9 @@
 PowerShell Gallery Status
 =========================
 
+### January 5th, 2024 Aggregate statistics for PowerShell modules is not getting updated.
+The team is currently investigating and working on mitigating the issue as quickly as possible.
+
 ### June 14th, 2022  The [PowerShell Gallery](https://powershellgallery.com) is down.
 The team is currently investigating and working on mitigating the issue as quickly as possible.
 
