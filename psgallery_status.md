@@ -2,6 +2,11 @@
 PowerShell Gallery Status
 =========================
 
+### March 4, 2024 The [PowerShell Gallery](https://powershellgallery.com) is experiencing an issue with account login.
+The team is currently investigating and working on mitigating the issue as quickly as possible.
+In the meantime users may not be able to log into the PSGallery, if you need to manage your package 
+please contact support.
+
 ### January 5th, 2024 Aggregate statistics for PowerShell modules is not getting updated.
 The team is currently investigating and working on mitigating the issue as quickly as possible.
 
