@@ -2,10 +2,12 @@
 PowerShell Gallery Status
 =========================
 
+### April 4, 2024 The [PowerShell Gallery](https://powershellgallery.com) is experiencing intermittent failures.
 __Status: Resolved__
 
-### April 3, 2024 The [PowerShell Gallery](https://powershellgallery.com) is experiencing intermittent failures.
-The team is currently investigating and working on mitigating the issue as quickly as possible.
+__Summary of Impact__: PowerShellGallery.com experienced an outage.  Users were be unable to access the gallery or download packages.  
+
+__Root Cause__: Route cause was due to a SQL outage impacting PSGallery access to its database. Request failures began roughly 00:53 UTC on April 4, and resolved around 04:07 UTC. 
 
 ### March 4, 2024 The [PowerShell Gallery](https://powershellgallery.com) is experiencing an issue with account login.
 The team is currently investigating and working on mitigating the issue as quickly as possible.
