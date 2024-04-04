@@ -1,6 +1,9 @@
 
 PowerShell Gallery Status
 =========================
+
+__Status: Resolved__
+
 ### April 4, 2024 The [PowerShell Gallery](https://powershellgallery.com) is experiencing intermittent failures.
 The team is currently investigating and working on mitigating the issue as quickly as possible.
 
