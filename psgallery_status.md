@@ -1,6 +1,8 @@
 
 PowerShell Gallery Status
 =========================
+### April 4, 2024 The [PowerShell Gallery](https://powershellgallery.com) is experiencing intermittent failures.
+The team is currently investigating and working on mitigating the issue as quickly as possible.
 
 ### March 4, 2024 The [PowerShell Gallery](https://powershellgallery.com) is experiencing an issue with account login.
 The team is currently investigating and working on mitigating the issue as quickly as possible.
