@@ -2,6 +2,9 @@
 PowerShell Gallery Status
 =========================
 
+### May 13th, 2024  The [PowerShell Gallery](https://powershellgallery.com) is having issues with statistics.
+The team is currently determining the root cause of this issue and is working to solve as quickly as possible.
+
 ### April 4, 2024 The [PowerShell Gallery](https://powershellgallery.com) is experiencing intermittent failures.
 __Status: Resolved__
 
