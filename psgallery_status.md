@@ -2,6 +2,13 @@
 PowerShell Gallery Status
 =========================
 
+### May 20th, 2024 The PowerShell Gallery is experiencing slowness.
+
+The team is currently investigating and working on mitigating the issue as quickly as possible.
+
+Status: Investigating
+
+
 ### May 13th, 2024  The [PowerShell Gallery](https://powershellgallery.com) is having issues with statistics.
 __Status: Resolved__ 
 
