@@ -6,7 +6,7 @@ PowerShell Gallery Status
 
 The team is currently investigating and working on mitigating the issue as quickly as possible.
 
-Status: Investigating
+Status: Resolved
 
 
 ### May 13th, 2024  The [PowerShell Gallery](https://powershellgallery.com) is having issues with statistics.
