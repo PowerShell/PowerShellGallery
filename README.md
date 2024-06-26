@@ -5,3 +5,10 @@ This Github repo is primarily reserved for future sharing of elements of the Pow
 
 ## The PowerShell Gallery status is available [here](./psgallery_status.md)
 
+## Code of Conduct
+
+Please see our [Code of Conduct](.github/CODE_OF_CONDUCT.md) before participating in this project.
+
+## Security Policy
+
+For any security issues, please see our [Security Policy](.github/SECURITY.md).
