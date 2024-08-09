@@ -6,7 +6,7 @@ PowerShell Gallery Status
 
 Individual package statistics will be temporarily unavailable while we are making infrastructure changes.  There will be no loss of information, however statistics numbers will temporarily not update.
 
-__Status: Ongoing__
+__Status: Resolved__
 
 ### May 20th, 2024 The PowerShell Gallery is experiencing slowness.
 
