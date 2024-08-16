@@ -2,6 +2,12 @@
 PowerShell Gallery Status
 =========================
 
+### August 16th 2024, Logins to the PowerShell Gallery are currently failing.
+
+User logins to the PowerShell Gallery are currently failing, returning an Internal Server Error.  We are currently working on the issue and will resolve as quickly as possible.
+
+__Status: Ongoing__
+
 ### July 11th, 2024 Individual package statistics will be temporarily unavailable.
 
 Individual package statistics will be temporarily unavailable while we are making infrastructure changes.  There will be no loss of information, however statistics numbers will temporarily not update.
