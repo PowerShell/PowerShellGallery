@@ -2,7 +2,10 @@
 PowerShell Gallery Status
 =========================
 
-__Status: Ongoing__
+### January 28, Routine Maintenance
+
+The PowerShellGallery team will be conducting routine maintenance on Tuesday Jan 28 from 11am-1pm PST. We expect this change to not affect users, but if you experience issues or slowness downloading, please let us know.
+
 
 ### January 13th, CDN Migration off Edgio.
 
