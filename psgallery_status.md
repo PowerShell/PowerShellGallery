@@ -1,7 +1,8 @@
 
 PowerShell Gallery Status
 =========================
-
+### March 14th 2025, Incorrect display logins- UPDATE
+Logins are working, but now only showing incorrect information (email address, specifically) for a small subset of users. To check if this affects you: log in to the PSGallery site with your usual credential, select your username in the top right corner and check if the email address displays as 'psgadmin@microsoft.com'. If so, on the same 'View Profile' page, click the pencil icon by your username, click and expand the 'Email Address' dropdown and input your desired email address, hit 'Save'. Please email us at 'psgadmin@microsoft.com' and we will remedy then it.
 ### March 14th 2025, Incorrect display logins
 Logins are working, but showing in correct information.  The team is actively working on this issue. 
 If you need to reach the PowerShellGallery team please directly email the team at psgadmin at microsoft.com. 
