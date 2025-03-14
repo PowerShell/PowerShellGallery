@@ -2,28 +2,31 @@
 PowerShell Gallery Status
 =========================
 
-## March 14th 2025, Incorrect display logins
+### March 14th 2025, Incorrect display logins
 Logins are working, but showing in correct information.  The team is actively working on this issue. 
 If you need to reach the PowerShellGallery team please directly email the team at psgadmin at microsoft.com. 
+__Status: Ongoing__
 
-## February 12th 2025, Email system is down
+### February 12th 2025, Email system is down
 The PowerShellGallery team is investigating this issue and working on a solution.
 If you need to reach the PowerShellGallery team please directly email the team at psgadmin at microsoft.com. 
+__Status: Ongoing__
 
 ### January 28th 2025, Routine Maintenance
 
 The PowerShellGallery team will be conducting routine maintenance on Tuesday Jan 28 from 11am-1pm PST. We expect this change to not affect users, but if you experience issues or slowness downloading, please let us know.
-
+__Status: Resolved__
 
 ### January 13th 2025, CDN Migration off Edgio.
 
 As part of a [migration off Edgio CDN](https://learn.microsoft.com/en-us/azure/cdn/edgio-retirement-faq), PowerShellGallery is updating its content delivery URLs. We expect this change to not affect users, but if you experience issues or slowness downloading, please let us know.
+__Status: Resolved__
 
 ### August 16th 2024, Logins to the PowerShell Gallery are currently failing.
 
 User logins to the PowerShell Gallery are currently failing, returning an Internal Server Error.  We are currently working on the issue and will resolve as quickly as possible.
 
-__Status: Ongoing__
+__Status: Resolved__
 
 ### July 11th, 2024 Individual package statistics will be temporarily unavailable.
 
