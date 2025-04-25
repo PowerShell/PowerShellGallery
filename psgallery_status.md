@@ -1,6 +1,11 @@
 
 PowerShell Gallery Status
 =========================
+### April 25th 2025, Slowness with downloads
+We are noticing slowness for downloading packages from PSGallery and are working to resolve this.
+
+__Status: Ongoing__
+
 ### March 14th 2025, Incorrect display logins- UPDATE
 Logins are working, but now only showing incorrect information (email address, specifically) for a small subset of users. To check if this affects you: log in to the PSGallery site with your usual credential, select your username in the top right corner and check if the email address displays as 'psgadmin@microsoft.com'. If so, on the same 'View Profile' page, click the pencil icon by your username, click and expand the 'Email Address' dropdown and input your desired email address, hit 'Save'. Please email us at 'psgadmin@microsoft.com' and we will remedy then it.
 ### March 14th 2025, Incorrect display logins
