@@ -1,10 +1,15 @@
 
 PowerShell Gallery Status
 =========================
+### September 9th 2025, Unable to Install NuGet provider, cert expired error
+When `Install-PackageProvider` from [OneGet](https://github.com/OneGet/oneget/issues/553) installs NuGet provider, users were seeing that the `Certificate has expired for https://onegetcdn.azureedge.net/` . The `.swidtag` file that OneGet needs `https://cdn.oneget.org/providers/nuget-2.8.5.208.package.swidtag` was pointing to the old CDN url that we moved off of when migrating CDNs. We purged the CDN and the link is now updated to the new one. We are investigating this further on our end, but believe the issue to be resolved for users. Please open an issue if you see this still occurring for you.
+
+__Status: Mitigated__
+
 ### April 25th 2025, Slowness with downloads
 We are noticing slowness for downloading packages from PSGallery and are working to resolve this.
 
-__Status: This issue is being mitigated, if you are still experiencing this issue please let us know.
+__Status: This issue is being mitigated, if you are still experiencing this issue please let us know.__
 
 ### March 14th 2025, Incorrect display logins- UPDATE
 Logins are working, but now only showing incorrect information (email address, specifically) for a small subset of users. To check if this affects you: log in to the PSGallery site with your usual credential, select your username in the top right corner and check if the email address displays as 'psgadmin@microsoft.com'. If so, on the same 'View Profile' page, click the pencil icon by your username, click and expand the 'Email Address' dropdown and input your desired email address, hit 'Save'. Please email us at 'psgadmin@microsoft.com' and we will remedy then it.
