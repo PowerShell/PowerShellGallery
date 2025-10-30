@@ -5,7 +5,7 @@ PowerShell Gallery Status
 Please see https://azure.status.microsoft/en-us/status for Azure Front Door specific status updates.
 If you need to reach the PowerShellGallery team please directly email the team at psgadmin at microsoft.com. 
 
-__Status: Mitigated__
+__Status: Resolved__
 
 ### September 9th 2025, Unable to Install NuGet provider, cert expired error
 When `Install-PackageProvider` from [OneGet](https://github.com/OneGet/oneget/issues/553) installs NuGet provider, users were seeing that the `Certificate has expired for https://onegetcdn.azureedge.net/` . The `.swidtag` file that OneGet needs `https://cdn.oneget.org/providers/nuget-2.8.5.208.package.swidtag` was pointing to the old CDN url that we moved off of when migrating CDNs. We purged the CDN and the link is now updated to the new one. We are investigating this further on our end, but believe the issue to be resolved for users. Please open an issue if you see this still occurring for you.
