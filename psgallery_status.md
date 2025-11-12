@@ -1,6 +1,15 @@
 
 PowerShell Gallery Status
 =========================
+### November 12th 2025, Intermittent issues with incorrect search results returned.
+Over the past couple months we've seen intermittent issues with Lucene, our search indexing system.  When this occurs, users searching for a package on the Gallery website will see "0 packages returned".  If you encounter this issue, our guidance is to use client commands, e.g. PSResourceGet, to search for and download packages.
+ 
+When using client commands to query the Gallery, you will be able to successfully search for a package given its full package name: `Find-PSResource -Name 'Az'` or `Find-PSResource -Name 'Az' -Version '9.0.0'` . 
+ 
+Some client commands are unfortunately impacted by this issue, specifically searches for tags, commands, or wildcard names. For example, `Find-PSResource -Tag 'myTag'`, `Find-PSResource -Command 'myCmd'`, and `Find-PSResource -Name "PowerShell*"` may produce empty or incomplete results. We are working on broader architectural changes, but are actively working on this issue.  
+
+__Status: Ongoing__
+
 ### October 29th 2025, PSGallery is down due to Azure Front Door outage
 Please see https://azure.status.microsoft/en-us/status for Azure Front Door specific status updates.
 If you need to reach the PowerShellGallery team please directly email the team at psgadmin at microsoft.com. 
@@ -10,7 +19,7 @@ __Status: Resolved__
 ### September 9th 2025, Unable to Install NuGet provider, cert expired error
 When `Install-PackageProvider` from [OneGet](https://github.com/OneGet/oneget/issues/553) installs NuGet provider, users were seeing that the `Certificate has expired for https://onegetcdn.azureedge.net/` . The `.swidtag` file that OneGet needs `https://cdn.oneget.org/providers/nuget-2.8.5.208.package.swidtag` was pointing to the old CDN url that we moved off of when migrating CDNs. We purged the CDN and the link is now updated to the new one. We are investigating this further on our end, but believe the issue to be resolved for users. Please open an issue if you see this still occurring for you.
 
-__Status: Mitigated__
+__Status: Resolved__
 
 ### April 25th 2025, Slowness with downloads
 We are noticing slowness for downloading packages from PSGallery and are working to resolve this.
@@ -19,6 +28,7 @@ __Status: This issue is being mitigated, if you are still experiencing this issu
 
 ### March 14th 2025, Incorrect display logins- UPDATE
 Logins are working, but now only showing incorrect information (email address, specifically) for a small subset of users. To check if this affects you: log in to the PSGallery site with your usual credential, select your username in the top right corner and check if the email address displays as 'psgadmin@microsoft.com'. If so, on the same 'View Profile' page, click the pencil icon by your username, click and expand the 'Email Address' dropdown and input your desired email address, hit 'Save'. Please email us at 'psgadmin@microsoft.com' and we will remedy then it.
+
 ### March 14th 2025, Incorrect display logins
 Logins are working, but showing in correct information.  The team is actively working on this issue. 
 If you need to reach the PowerShellGallery team please directly email the team at psgadmin at microsoft.com. 
@@ -59,7 +69,7 @@ __Status: Resolved__
 
 The team is currently investigating and working on mitigating the issue as quickly as possible.
 
-Status: Resolved
+__Status: Resolved__
 
 
 ### May 13th, 2024  The [PowerShell Gallery](https://powershellgallery.com) is having issues with statistics.
@@ -95,7 +105,7 @@ __Status: Resolved__
 ### May 2nd, 2022 16:41 UTC The [PowerShell Gallery](https://powershellgallery.com) is having issues with latency.
 For the past week there have been reports of delays and extreme slowness with the PSGallery.  We're putting all our efforts into addressing this and more seriously looking into better ways to optimize our service. 
 
-__Status: Mitigated__
+__Status: Resolved__
 
 ### September 22nd, 2021
 From Monday, September 27th to Thursday, September 30th a migration will occur to a new (ARM based) cloud service. We do not anticipate that this will interrupt traffic or interfer with Gallery access, but would like to notify users beforehand in case of unanticipated side effects.
