@@ -2,7 +2,7 @@
 PowerShell Gallery Status
 =========================
 ### February 2nd 2026, Issues with downloading a subset of packages.
-Around 08:00pm UTC users reported failures installing and manually downloading specific packages from the Gallery. This was due to a CDN issue and is resolved as of 09:00pm. 
+Around 08:00pm UTC users reported failures installing and manually downloading specific packages from the Gallery. This was due to a CDN issue and is resolved as of 09:00pm UTC. 
 
 __Status: Resolved__
 
