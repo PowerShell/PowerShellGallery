@@ -1,6 +1,11 @@
 
 PowerShell Gallery Status
 =========================
+### February 2nd 2026, Issues with downloading a subset of packages.
+Around 08:00pm UTC users reported failures installing and manually downloading specific packages from the Gallery. This was due to a CDN issue and is resolved as of 09:00pm. 
+
+__Status: Resolved__
+
 ### November 12th 2025, Intermittent issues with incorrect search results returned.
 Over the past couple months we've seen intermittent issues with Lucene, our search indexing system.  When this occurs, users searching for a package on the Gallery website will see "0 packages returned".  If you encounter this issue, our guidance is to use client commands, e.g. PSResourceGet, to search for and download packages.
  
