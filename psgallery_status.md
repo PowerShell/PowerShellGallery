@@ -2,6 +2,11 @@
 PowerShell Gallery Status
 =========================
 
+### Oct 27th 2026, Latency in Search and Package Installations.
+Since 7:00am UTC we have been observing latency and timeouts while searching and installing packages. We are working on a fix to resolve this, but you may see brief delays or interruptions in downloading packages.
+
+__Status: Ongoing__
+
 ### March 5th 2026, Slowness in installing packages.
 Around 12:00pm UTC we have been observing delays in installing packages. We are working on a fix to resolve this, but you may see brief delays or interruptions in downloading packages.
 
